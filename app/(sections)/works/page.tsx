@@ -2,7 +2,7 @@ import React from 'react'
 
 const WorksPage = () => {
   return (
-    <div>WorksPage</div>
+    <div className='w-full h-auto'>WorksPage</div>
   )
 }
 
