@@ -6,7 +6,6 @@ import WorkCard from "@/components/works/workCard";
 
 const WorksPage = async () => {
   const works = await getData("works");
-  console.log(works);
   return (
     <div className="w-full h-auto">
       <Container>
