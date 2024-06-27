@@ -15,7 +15,7 @@ const WorkCard = ({ title, language, description, image }: workCardType) => {
     <div className="flex flex-row w-[70%] h-[300px] border border-gray-600 border-opacity-35 shadow-gray-200  shadow p-8 group mx-auto rounded-2xl relative">
       <Image src={image} fill alt="bg" className=" object-cover absolute opacity-15 dark:opacity-20 blur-md rounded-2xl "/>
 
-      <div className="w-1/2 flex flex-col items-center space-y-4">
+      <div className="w-1/2 flex flex-col items-center space-y-4 ">
         <h1 className="flex flex-col items-center text-xl font-semibold opacity-70">
           {title}
         </h1>
@@ -23,15 +23,15 @@ const WorkCard = ({ title, language, description, image }: workCardType) => {
           <p className="text-lg">Implemented in </p>
           <WorkIcons icon={language} />
         </div>
-        <p className="text-sm text-justify opacity-70 transition-opacity duration-500">
+        <p className="indent-6 text-sm text-justify opacity-70 transition-opacity duration-500">
           {description}
         </p>
          <Link className="text-cyan-700 dark:text-cyan-500 opacity-80 font-bold underline" href={"#"}>Read More</Link>
       </div>
 
      
-      <div className="w-1/2 flex flex-col justify-center items-center ">
-        <div className=" relative w-[250px] h-[170px] p-4 group-hover:scale-50 origin-top-right transition-transform duration-500 rounded-2xl overflow-hidden">
+      <div className="w-1/2 flex flex-col justify-center items-center -space-y-2 ">
+        <div className=" relative w-[270px] h-[200px] p-4 group-hover:scale-50 origin-top-right transition-transform duration-500 rounded-2xl overflow-hidden">
           <Image
             src={image}
             fill
