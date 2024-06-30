@@ -1,3 +1,4 @@
+import Navbar from "@/components/navbar/Navbar";
 
 
 export default function SectionsLayout({
@@ -7,9 +8,9 @@ export default function SectionsLayout({
 }>) {
   return (
         <div>
-            <div>navbar</div>
-            <div>{children}</div>
-            <div>footer</div>
+            <Navbar/>
+            <div className="w-full">{children}</div>
+            <div className="w-full bg-gray-600">footer</div>
         </div>
       
 
